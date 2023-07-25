@@ -1,0 +1,42 @@
+.landing {
+    padding-top: 57px;
+    overflow-x: hidden;
+}
+.slide-content {
+max-height: calc(100vh - 57px);
+}
+.slide-content img {
+    width: 100%;
+    filter: brightness(0.4);
+}
+.slide-content .text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: white;
+}
+.slide-content .btns a.one {
+color: white;
+background-color: var(--main-color);
+position: relative;
+overflow: hidden !important;
+}
+.slide-content .btns a.one:hover {
+color: var(--main-color);
+background-color: white;
+transition: 0.4s;
+}
+.btns a:nth-child(2) {
+color: var(--main-color);
+background-color: white;
+} 
+.btns a:nth-child(2):hover {
+color: white !important;
+background-color: var(--main-color);
+transition: 0.4s;
+}
+.text p {
+    color: var(--main-color);
+    font-weight: bold;
+}

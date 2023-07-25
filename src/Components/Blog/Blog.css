@@ -1,0 +1,14 @@
+.blog {
+background-color: #151515;
+}
+.blog .date {
+flex-basis: 30%;
+}
+.blog .blog-items {
+overflow: hidden;
+}
+.blog .blog-items:hover {
+border: 2px solid var(--main-color);
+transition: 0.3s;
+transform: translateY(-20px);
+}

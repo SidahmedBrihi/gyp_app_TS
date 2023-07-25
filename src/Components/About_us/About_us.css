@@ -1,0 +1,59 @@
+.about {
+background-color: #121212;
+padding-bottom: 120px !important;
+}
+.about .image {
+flex-basis: 38%;
+}
+.about .text {
+flex-basis: 58%;    
+}
+.about .text h1 {
+color: white;
+}
+@media (max-width : 995px) {
+.about .container {
+flex-direction: column !important;
+} 
+.about .image {
+max-width: 70%;
+}
+.about .text {
+margin-top: 30px;
+}
+
+}
+
+@media (max-width : 600px) {
+.about .container {
+flex-direction: column !important;
+padding: 0 20px;
+}
+}
+.about .Nonumy {
+color: white;
+font-weight: 100;
+}
+.us {
+background-color: white;
+}
+.us .links li {
+flex-basis: 50%;
+}
+.us .links li a {
+display: block;
+text-align: center;
+padding: 5px 0 ;
+color: var(--main-color);
+}
+.us .links li a.active {
+background-color: var(--second-color);
+color: white !important;
+}
+.parag p {
+display: none;
+color: #777;
+}
+.parag p.active {
+display: block;
+}

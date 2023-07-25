@@ -1,0 +1,150 @@
+.navbar {
+background-color: var(--second-color);
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
+z-index: 2000;
+border-bottom: 1px solid var(--main-color);
+}
+.navbar .logo {
+    color: var(--main-color);
+    z-index: 2000;
+}
+.navbar .logo:hover {
+    cursor: pointer;
+}
+.links li a {
+    color: white;
+}
+a.active {
+    color: var(--main-color) !important;
+}
+a:hover {
+    color: var(--main-color) !important;
+    transition: 0.3s;
+}
+@media (max-width : 900px) {
+    .second {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: calc(100%);
+        background-color: var(--second-color);
+        flex-direction: column;
+        transform: translateY(-200%);
+        z-index: 1999;
+        padding-bottom: 20px;
+    }
+    .second.active {
+        transform: translateY(0);
+        transition: 1s;
+    }
+    .second .links {
+        flex-direction: column;
+        margin-right: 0 !important;
+        padding-top: 10px;
+    }
+    .second .links li {
+        margin-bottom: 15px;
+    }
+}
+.join {
+background-color: var(--main-color);
+color: white;
+position: relative;
+overflow: hidden;
+font-weight: bold;
+}
+.join::before {
+  position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+background-color: white;
+left: -100%;
+top: 0;
+z-index: -1;
+}
+.join:hover {
+background-color: transparent;
+}
+.join:hover::before {
+left: 0;
+transition: 0.4s;
+}
+@media (max-width : 900px) {
+.join {
+width: fit-content;
+margin: 15px auto ;
+}
+}
+/* menu button */
+#checkbox {
+    display: none;
+  }
+
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-color);
+    border-radius: 4px;
+  }
+  
+  #bar2 {
+    transition-duration: .8s;
+  }
+  
+  #bar1 {
+    width: 50%;
+  }
+  
+  #bar2 {
+    width: 75%;
+  }
+  
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .1s;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+  @media (max-width : 900px) {
+    .menu-btn {
+        display: flex !important;
+    }
+}

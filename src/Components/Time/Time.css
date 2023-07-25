@@ -1,0 +1,13 @@
+.time {
+background-color: #121212;
+}
+.day.active {
+background-color: var(--main-color);
+color: white !important;
+}
+@media (max-width : 600px) {
+.time-items {
+max-width: 90% !important;
+margin: 0 auto;
+}
+    }

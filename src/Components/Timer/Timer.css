@@ -1,0 +1,18 @@
+.timer .logo {
+display: flex;
+justify-content: center;
+align-items: center;
+width: fit-content;
+background-color: var(--main-color);
+font-size: 50px;
+}
+@media (max-width : 600px) {
+.timer-items {
+max-width: 90% !important;
+margin: 0 auto;
+}
+}
+.timer .row {
+    width: 100%;
+    margin: 0 auto;
+}

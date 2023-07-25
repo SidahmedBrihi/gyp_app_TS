@@ -1,0 +1,9 @@
+.testimonial {
+    overflow: hidden;
+}
+.text-pres img {
+border: 3px solid var(--main-color);
+}
+.button span {
+cursor: pointer;
+}
